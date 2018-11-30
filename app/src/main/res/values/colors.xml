@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#000000</color>
+    <color name="nav_bg">#f9f9f9</color>
+    <color name="background">#363636</color>
+    <color name="actionbar_bg">#f9f9f9</color>
+    <color name="white">#ffffff</color>
+    <color name="text">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="add_min">#049342</color>
+    <color name="magic">#ffc400</color>
+    <color name="mode">#363836</color>
+    <color name="alarm">#ff0084</color>
+</resources>

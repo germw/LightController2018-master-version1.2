@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:keepScreenOn="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"	android:layout_height="fill_parent"
+        android:layout_marginLeft="3pt" 	android:layout_marginRight="3pt"	
+        android:layout_marginTop="3pt"		android:layout_marginBottom="3pt">
+   		 <LinearLayout
+        	android:orientation="vertical"
+       		android:layout_width="fill_parent"	android:layout_height="0dp" android:layout_weight="1">
+       		<!-- Buttons for bulbs -->
+        	<LinearLayout
+        	    android:orientation="horizontal"
+        	    android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="2">
+        	    <ImageView 
+        	        android:layout_width="wrap_content"	android:layout_height="fill_parent"
+        	        android:src="@drawable/home"	android:paddingLeft="5pt"	android:paddingRight="5pt"/>
+        	    <LinearLayout
+        	        android:orientation="horizontal"	android:background="@drawable/border"	android:layout_marginRight="2pt"
+        	        android:layout_width="0dp" android:layout_height="fill_parent"	android:layout_weight="1">
+        	    <ImageView
+        	        android:layout_width="wrap_content"	android:layout_height="wrap_content"
+        	        android:src="@drawable/tick"	android:baselineAlignBottom="true"	android:visibility="invisible"/>
+        	    <Button 
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	        android:text="A123"	android:textSize="7pt"	android:id="@+id/bulb1"	android:textColor="#EEEEEE"
+        	        android:drawableTop="@drawable/bulb_off1"	android:gravity="bottom|center"	android:maxLength="7"
+        	        android:background="@drawable/button_border"	android:paddingLeft="3pt"	android:paddingRight="3pt"	android:paddingTop="3pt"/>
+        	    <ImageView
+        	        android:layout_width="wrap_content"	android:layout_height="wrap_content"
+        	        android:src="@drawable/tick"	android:baselineAlignBottom="true"
+        	        android:id="@+id/bulb1_icon"/>
+        	    </LinearLayout> 
+        	    <LinearLayout
+        	        android:orientation="horizontal"	android:background="@drawable/border"	android:layout_marginRight="2pt"
+        	        android:layout_width="0dp" android:layout_height="fill_parent"	android:layout_weight="1">
+        	    <ImageView
+        	        android:layout_width="wrap_content"	android:layout_height="wrap_content"
+        	        android:src="@drawable/tick"	android:baselineAlignBottom="true"	android:visibility="invisible"/>
+        	    <Button 
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	        android:text="A123"	android:textSize="7pt"	android:id="@+id/bulb2"	android:textColor="#EEEEEE"
+        	        android:drawableLeft="@drawable/bulb_off1"	android:gravity="bottom|center"	android:maxLength="7"
+        	        android:background="@drawable/button_border"	android:paddingLeft="3pt"	android:paddingRight="3pt"	android:paddingTop="3pt"/>
+        	    <ImageView
+        	        android:layout_width="wrap_content"	android:layout_height="wrap_content"
+        	        android:src="@drawable/tick"	android:baselineAlignBottom="true"
+        	        android:id="@+id/bulb2_icon"/>
+        	    </LinearLayout>
+        	    <LinearLayout
+        	        android:orientation="horizontal"	android:background="@drawable/border"
+        	        android:layout_width="0dp" android:layout_height="fill_parent"	android:layout_weight="1">
+        	    <ImageView
+        	        android:layout_width="wrap_content"	android:layout_height="wrap_content"
+        	        android:src="@drawable/tick"	android:baselineAlignBottom="true"	android:visibility="invisible"/>
+        	    <Button 
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	        android:text="A123"	android:textSize="7pt"	android:id="@+id/bulb3"	android:textColor="#EEEEEE"
+        	        android:drawableLeft="@drawable/bulb_off1"	android:gravity="bottom|center"	android:maxLength="7"
+        	        android:background="@drawable/button_border"	android:paddingLeft="3pt"	android:paddingRight="3pt"	android:paddingTop="3pt"/>
+        	    <ImageView
+        	        android:layout_width="wrap_content"	android:layout_height="wrap_content"
+        	        android:src="@drawable/cross"	android:baselineAlignBottom="true"
+        	        android:id="@+id/bulb3_icon"/>
+        	    </LinearLayout>      	        
+        	</LinearLayout>
+        	<!-- Display current flux and cct, toggle button -->
+        	<LinearLayout
+        	    android:orientation="horizontal"
+        	    android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="1"
+        	    android:layout_marginTop="3pt"	android:layout_marginBottom="3pt">
+        	    <TextView
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="4"
+        	        android:text="Current Flux"	android:textSize="7pt"	android:gravity="center"/>
+        	    <TextView
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="4"
+        	        android:text="300"		android:textSize="8pt"	android:background="@drawable/border"	
+        	        android:textColor="#29DB15"	android:id="@+id/current_flux"	android:gravity="center"/>
+        	    <TextView
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="4"
+        	        android:text="Current CCT"	android:textSize="7pt"	android:gravity="center"/>
+        	    <TextView
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="4"
+        	        android:text="5000"		android:textSize="8pt"	android:background="@drawable/border"	
+        	        android:textColor="#29DB15"	android:id="@+id/current_cct"	android:gravity="center"/>
+        		<ImageButton
+        		    android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="3"
+        		    android:id="@+id/table_but"	android:background="#393939"/>
+        		    
+        	</LinearLayout>
+        	<!-- Display table and bulb(changing color with 2 parameters) -->
+        	<LinearLayout
+        	    android:orientation="vertical"
+        	    android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="6"
+        	    android:background="@drawable/table">
+        		<TableLayout
+       				android:orientation="horizontal"	
+       				android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="3"
+					android:id="@+id/table"	android:stretchColumns="0,1,2,3"	android:layout_gravity="center_vertical">
+         		<TableRow
+            		android:background="@drawable/border1">
+	        		<TextView 
+	            	android:layout_width="wrap_content"	android:layout_height="wrap_content"	android:text="Bulb"	android:id="@+id/bulb_t"
+	            	android:textColor="#29DB15"	android:textSize="6pt"	android:layout_marginLeft="6pt"/>
+	       			<TextView 
+	       			android:id="@+id/table_bulb1"	android:layout_width="wrap_content"	android:layout_height="wrap_content"
+	            	android:text="@string/bulb1"	android:textColor="#29DB15"	android:textSize="6pt"/>
+	        		<TextView 
+	        		android:id="@+id/table_bulb2"	android:layout_width="wrap_content"	android:layout_height="wrap_content"
+	            	android:text="@string/bulb2"	android:textColor="#29DB15"	android:textSize="6pt"/>
+	        		<TextView
+	        		android:id="@+id/table_bulb3"	android:layout_width="wrap_content"	android:layout_height="wrap_content"
+	            	android:text="@string/bulb3"	android:textColor="#29DB15"	android:textSize="6pt"/>
+        		</TableRow>
+	        	<TableRow
+	            	android:background="@drawable/border_t">
+	            	<TextView 
+	            	android:layout_width="wrap_content"	android:layout_height="wrap_content"	android:text="Status"	android:id="@+id/status_t"
+	            	android:textColor="#29DB15"	android:textSize="6pt"	android:layout_marginLeft="6pt"/>
+	       			<TextView 
+	       			android:id="@+id/bulb1_on"	android:layout_width="wrap_content"	android:layout_height="wrap_content"
+	            	android:text="@string/bulb1_on"	android:textSize="6pt"	android:textColor="#29DB15"/>
+	        		<TextView 
+	        		android:id="@+id/bulb2_on"	android:layout_width="wrap_content"	android:layout_height="wrap_content"
+	            	android:text="@string/bulb1_on"	android:textSize="6pt"	android:textColor="#29DB15"/>
+	        		<TextView 
+	        		android:id="@+id/bulb3_on"	android:layout_width="wrap_content"	android:layout_height="wrap_content"
+	            	android:text="@string/bulb1_on"	android:textSize="6pt"	android:textColor="#29DB15"/>
+        		</TableRow>
+        		<TableRow
+            		android:background="@drawable/border_t">
+            		<TextView 
+            		android:layout_width="wrap_content"	android:layout_height="wrap_content"	android:text="Intensity"	android:id="@+id/intensity_t"
+            		android:textColor="#29DB15"	android:textSize="6pt"	android:layout_marginLeft="6pt"/>
+            		<TextView 
+            		android:id="@+id/Int1"	android:layout_width="wrap_content"	android:layout_height="wrap_content"
+            		android:text="@string/Int1"	android:textColor="#29DB15"	android:textSize="6pt"/>
+            		<TextView 
+            		android:id="@+id/Int2"	android:layout_width="wrap_content"	android:layout_height="wrap_content"
+            		android:text="@string/Int2"	android:textColor="#29DB15"	android:textSize="6pt"/>
+            		<TextView 
+            		android:id="@+id/Int3"	android:layout_width="wrap_content"	android:layout_height="wrap_content"
+            		android:text="@string/Int3"	android:textColor="#29DB15"	android:textSize="6pt"/>
+          		</TableRow>
+          		<TableRow
+              		android:background="@drawable/border_t">
+            	<TextView 
+            		android:layout_width="wrap_content"	android:layout_height="wrap_content"	android:text="Color"	android:id="@+id/color_t"
+            		android:textColor="#29DB15"	android:textSize="6pt"	android:layout_marginLeft="6pt"/>
+            	<TextView 
+            		android:id="@+id/Color1"	android:layout_width="wrap_content"	android:layout_height="wrap_content"
+            		android:text="@string/Color1"	android:textColor="#29DB15"	android:textSize="6pt"/>
+            	<TextView 
+            		android:id="@+id/Color2"	android:layout_width="wrap_content"	android:layout_height="wrap_content"
+            		android:text="@string/Color2"	android:textColor="#29DB15"	android:textSize="6pt"/>
+            	<TextView 
+            		android:id="@+id/Color3"	android:layout_width="wrap_content"	android:layout_height="wrap_content"
+            		android:text="@string/Color3"	android:textColor="#29DB15"	android:textSize="6pt"/>
+          		</TableRow>       
+    			</TableLayout>
+    			<LinearLayout
+    			    android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="1" 
+    			    android:id="@+id/gap1"	android:orientation="horizontal"/>
+    			<ImageView 
+    			    android:layout_width="fill_parent"	android:layout_height="wrap_content"
+    			    android:src="@drawable/bulb"	android:layout_gravity="center_vertical"/>
+    			<LinearLayout
+    			    android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="1" 
+    			    android:id="@+id/gap2"	android:orientation="horizontal"/>     	    
+        	</LinearLayout>
+   		 </LinearLayout>
+		<LinearLayout
+     	   android:orientation="vertical"
+        	android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1">
+        	<LinearLayout
+        	    android:orientation="horizontal"
+        	    android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="1">
+    			<TextView
+    			    android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+    			    android:text="Flux"	android:gravity="bottom|left"	android:id="@+id/intensity_t1"/>
+        		<TextView
+        	    	android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	  		android:text="@string/Display_Intensity"	android:id="@+id/Display_Intensity"
+        	  		android:gravity="bottom|right"/>
+        	</LinearLayout>
+        	<LinearLayout 
+        	    android:orientation="horizontal"
+        	    android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="1">
+        	    <ImageButton
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	        android:background="@drawable/border2"	android:src="@drawable/minus"
+        	        android:id="@+id/dec_intensity"/>        	    
+        	    <SeekBar
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="8"
+        	        android:background="@drawable/border_t"	android:max="22"	android:maxHeight="3dp"
+        	        android:paddingLeft="5pt"	android:paddingRight="5pt"	android:thumb="@drawable/selected2"
+        	        android:id="@+id/seekbar_intensity"	android:progressDrawable="@drawable/seekbar_progress"/>
+ 	    		<ImageButton
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	        android:background="@drawable/border3"	android:src="@drawable/add"
+        	        android:id="@+id/inc_intensity"/>
+        	</LinearLayout>
+        	<ImageView 
+        	    android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="0.5"
+        	    />
+        	<LinearLayout
+        	    android:orientation="horizontal"
+        	    android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="1">
+ 	    		<TextView
+ 	    		    android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+ 	    		    android:text="Color Temperature"	android:gravity="bottom|left"	android:id="@+id/color_t1"/>
+        		<TextView
+        	   		android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	    	android:text="@string/Display_ColorTemperature"	android:id="@+id/Display_ColorTemperature"
+        	    	android:gravity="bottom|right"/>
+        	</LinearLayout>
+        	<LinearLayout 
+        	    android:orientation="horizontal"
+        	    android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="1">
+        	    <ImageButton
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	        android:background="@drawable/border2"	android:src="@drawable/minus"
+        	        android:id="@+id/dec_color"/>
+        	    <SeekBar
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="8"
+        	        android:background="@drawable/border_t"	android:max="42"	android:maxHeight="2dp"
+        	        android:paddingLeft="5pt"	android:paddingRight="5pt"	android:thumb="@drawable/selected2"
+        	        android:id="@+id/seekbar_color"	android:progressDrawable="@drawable/seekbar_progress"/>
+ 	    		<ImageButton
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	        android:background="@drawable/border3"	android:src="@drawable/add"
+        	        android:id="@+id/inc_color"/>      	    
+        	</LinearLayout>
+        	<ImageView 
+        	    android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="0.5"
+        	    />
+        	<LinearLayout
+        	    android:orientation="horizontal"
+        	    android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="1.5">
+        	    <Button
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	        android:text="Living room"	android:textSize="7pt"	android:textColor="#DDDDDD"	
+        	        android:background="@drawable/border4"	android:gravity="center"
+        	        android:id="@+id/pre1"/>
+        	    <Button
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	        android:text="Washroom"		android:textSize="7pt"	android:textColor="#DDDDDD"	
+        	        android:background="@drawable/border_t"	android:gravity="center"
+        	        android:id="@+id/pre2"/>
+        	    <Button
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	        android:text="Kitchen"	android:textSize="7pt"	android:textColor="#DDDDDD"	
+        	        android:background="@drawable/border5"	android:gravity="center"
+        	        android:id="@+id/pre3"/>
+        	</LinearLayout>
+        	<LinearLayout
+        	    android:orientation="horizontal"
+        	    android:layout_width="fill_parent"	android:layout_height="0dp"	android:layout_weight="2.5">
+        	    <Button
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	        android:text="Effect"	android:textSize="7pt"	android:drawableTop="@drawable/magic"
+        	        android:background="@drawable/border6"	android:gravity="center|bottom"	android:paddingTop="3pt"
+        	        android:id="@+id/Effect"	android:textColor="#DDDDDD"	android:paddingBottom="3pt"/>
+        	    <Button
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	        android:text="Send"		android:textSize="7pt"	android:drawableTop="@drawable/send_out"
+        	        android:background="@drawable/border_t"	android:gravity="center|bottom"	android:paddingTop="3pt"
+        	        android:id="@+id/button_send"	android:textColor="#DDDDDD"	android:paddingBottom="3pt"/>
+        	    <Button
+        	        android:layout_width="0dp"	android:layout_height="fill_parent"	android:layout_weight="1"
+        	        android:text="Off"	android:textSize="7pt"	android:drawableTop="@drawable/off"
+        	        android:background="@drawable/border7"	android:gravity="center|bottom"	android:paddingTop="5pt"
+        	        android:id="@+id/Off"	android:textColor="#DDDDDD"	android:paddingBottom="3pt"
+        	        android:bottomLeftRadius="5pt"/>
+        	</LinearLayout>        		
+    	</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

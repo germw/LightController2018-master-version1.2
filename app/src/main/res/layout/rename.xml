@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- For rename bulbs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true" 
+        android:focusableInTouchMode="true"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        android:paddingTop="5pt">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Bulb"
+        android:textSize="30dp"
+        android:textColor="@color/text"
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Bulb 1"
+        android:textSize="20dp"
+        android:textColor="@color/text"
+        />
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/name1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text"
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Bulb 2"
+        android:textSize="20dp"
+        android:textColor="@color/text"
+        />
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/name2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text"
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Bulb 3"
+        android:textSize="20dp"
+        android:textColor="@color/text"
+        />
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/name3"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text"
+        />
+    
+    <!--  The code below is for rename preference name -->
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Preference"
+        android:textSize="30dp"
+        android:textColor="@color/text"
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Preference 1"
+        android:textSize="20dp"
+        android:textColor="@color/text"
+        />
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/rename_pre1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text"
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Preference 2"
+        android:textSize="20dp"
+        android:textColor="@color/text"
+        />
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/rename_pre2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text"
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Preference 3"
+        android:textSize="20dp"
+        android:textColor="@color/text"
+        />
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/rename_pre3"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text"
+        />
+    
+    <!-- Following are codes for OK and CANCEL buttons -->
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rename_ok"
+            android:text="OK"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="15dp"
+            />
+        <Button 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/rename_cancel"
+            android:text="CANCEL"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            />
+    </LinearLayout>	        
+    </LinearLayout>
+</ScrollView>

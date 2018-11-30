@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">LightController</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!--navigation bar option-->
+    <string name="user_menu">User Menu</string>
+    <string name="setting">Setting</string>
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+
+    <string name="opt1_menu">User Menu</string>
+    <string name="opt2_set">Setting</string>
+    <string name="opt3_con">Connect a device</string>
+    <string name="opt4_dis">Make discoverable</string>
+    <string name="opt5_rename">Rename</string>
+    <string name="opt6_config">Configuration</string>
+    <string name="opt7_pwm">PWM</string>
+
+    <!-- Options Menu -->
+    <string name="add">+</string>
+    <string name="minus">-</string>
+    <string name="Display_Intensity">300</string>
+    <string name="Display_ColorTemperature">3300</string>
+    <string name="Intensity">Intensity</string>
+    <string name="ColorTemperature">Color Temperature</string>
+    <string name="SetValue" />
+    <string name="CurrentValue" />
+    <string name="bulb1">Bulb 1</string>
+    <string name="bulb2">Bulb 2</string>
+    <string name="bulb3">Bulb 3</string>
+    <string name="save">Save Preference</string>
+    <string name="preference">Preference</string>
+    <string name="Int1" />
+    <string name="Int2" />
+    <string name="Int3" />
+    <string name="Color1" />
+    <string name="Color2" />
+    <string name="Color3" />
+    <string name="bulb1_on">Off</string>
+    <string name="bulb2_on">Off</string>
+    <string name="bulb3_on">Off</string>
+    <string-array name="effect_list">
+        <item>Effect 1</item>
+        <item>Effect 2</item>
+        <item>Effect 3</item>
+    </string-array>
+    <string name="Q1" />
+
+    <string name="menu_no">1</string>
+    <string name="to_left">&lt;&lt;</string>
+    <string name="to_right">&gt;&gt;</string>
+    <string name="user_menu_content"></string>
+
+    <string name="current_flux" />
+    <string name="current_cct" />
+    <string name="table_but" />
+
+    <string name="effect">EFFECT</string>
+
+    <string name="newName">Enter a new name for </string>
+    <string name="enter">Enter</string>
+    <string name="cancel">Cancel</string>
+
+
+
+</resources>

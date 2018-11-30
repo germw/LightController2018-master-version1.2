@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/alarm1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+
+    <CheckBox
+        android:id="@+id/alarm2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+
+    <CheckBox
+        android:id="@+id/alarm3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Timer"
+        android:textColor="@color/text"
+        android:textSize="18sp" />
+    <!-- Title Bar  HOUR  MINUE -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="HOURS"
+            android:textColor="@color/text"
+            android:textSize="18sp" />
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+			android:textSize="14dp"
+            android:textColor="@color/text"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="MINUTES"
+            android:textColor="@color/text"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <!-- Button Add -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:gravity="center"
+			android:textSize="14dp"
+			android:id="@+id/hour_add"
+            />
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+			android:textSize="14dp"
+            android:textColor="@color/text"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:gravity="center"
+			android:textSize="14dp"
+			android:id="@+id/minute_add"
+            android:textColor="@color/text"
+            />       
+    </LinearLayout>
+    <!-- Display -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="00"
+			android:textSize="30dp"
+			android:id="@+id/hour"
+			android:gravity="center"
+            android:textColor="@color/text"
+            />
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+			android:textSize="18dp"
+            android:textColor="@color/text"
+            />
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="00"
+			android:textSize="30dp"
+			android:id="@+id/minute"
+			android:gravity="center"
+            android:textColor="@color/text"
+            />       
+    </LinearLayout>
+    <!-- Button MINUS -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="center"
+			android:textSize="14dp"
+			android:id="@+id/hour_minus"
+            android:textColor="@color/text"
+            />
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+			android:textSize="14dp"
+            android:textColor="@color/text"
+            />
+        <Button 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:gravity="center"
+			android:textSize="14dp"
+			android:id="@+id/minute_minus"
+            android:textColor="@color/text"
+            />       
+    </LinearLayout> 
+    <!-- OK/CANCEL Button -->  
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Set Alarm"
+            android:id="@+id/alarm_set"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/alarm_cancel"
+            />
+    </LinearLayout>
+    
+
+</LinearLayout>

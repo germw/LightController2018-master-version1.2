@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@color/text">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+		<ImageButton
+		    android:id="@+id/to_left"
+		    android:layout_height="fill_parent"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:src="@drawable/minus"
+		    android:background="@drawable/menu_border"
+		/>
+		<TextView 
+		    android:id="@+id/menu_no"
+		    android:layout_height="fill_parent"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:text="@string/menu_no"
+		    android:textSize="8pt"
+		    android:gravity="center"
+		    android:background="@drawable/menu_border"
+			android:textColor="@color/white"
+		    />
+		<ImageButton
+		    android:id="@+id/to_right"
+		    android:layout_height="fill_parent"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:src="@drawable/add"
+		    android:background="@drawable/menu_border"
+		/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/menu_border" >
+
+		<TextView
+			android:id="@+id/content"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:text="@string/user_menu_content"
+			android:textColor="@color/white"
+			android:textSize="15dp" />
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:drawableLeft="@android:drawable/ic_notification_clear_all"
+        android:text="DISMISS"
+        android:id="@+id/dismiss"
+        android:background="@drawable/menu_border"
+		android:textColor="@color/white"
+        />
+
+</LinearLayout>

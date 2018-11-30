@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"	android:layout_height="fill_parent">
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"	android:layout_height="wrap_content"
+        android:orientation="vertical"	android:layout_marginLeft="2pt">
+        <TextView 
+            android:layout_width="fill_parent"	android:layout_height="wrap_content"
+            android:text="Text Size"	android:textSize="20dp"
+            android:textColor="@color/text"/>
+        <RadioGroup 
+            android:id="@+id/radiogroup_textSize"
+            android:layout_width="wrap_content"	android:layout_height="wrap_content"
+            android:orientation="vertical"	android:layout_x="3px"
+            >
+            	<RadioButton
+            	    android:id="@+id/textSize1"	android:text="Small"
+            	    android:layout_width="wrap_content"	android:layout_height="wrap_content"
+                    android:textColor="@color/text" />
+            	<RadioButton
+            	    android:id="@+id/textSize2"	android:text="Medium"
+            	    android:layout_width="wrap_content"	android:layout_height="wrap_content"
+                    android:textColor="@color/text" />
+            	<RadioButton
+            	    android:id="@+id/textSize3"	android:text="Large"
+            	    android:layout_width="wrap_content"	android:layout_height="wrap_content"
+                    android:textColor="@color/text" />
+            	<RadioButton
+            	    android:id="@+id/textSize4"	android:text="Extra Large"
+            	    android:layout_width="wrap_content"	android:layout_height="wrap_content"
+                    android:textColor="@color/text" />
+        </RadioGroup>
+        <TextView 
+            android:layout_marginTop="25dp"
+            android:layout_width="fill_parent"	android:layout_height="wrap_content"
+            android:text="Status Table"	android:textSize="20dp"
+            android:textColor="@color/text"/>
+        <CheckBox 
+            android:layout_width="fill_parent"	android:layout_height="wrap_content"
+            android:text="Hide"	android:id="@+id/hideChecked"
+            android:textColor="@color/text" />
+        <TextView 
+            android:layout_marginTop="25dp"
+            android:layout_width="fill_parent"	android:layout_height="wrap_content"
+            android:text="Enable Bulbs"	android:textSize="20dp"
+            android:textColor="@color/text"/>
+        <TextView
+            android:layout_width="fill_parent"	android:layout_height="wrap_content"
+            android:id="@+id/bulb1_name"
+            android:textColor="@color/text"/>
+        <CheckBox
+            android:layout_width="fill_parent"	android:layout_height="wrap_content"
+            android:text="Enable"	android:id="@+id/bulb1_en"
+            android:textColor="@color/text" />
+        <TextView
+            android:layout_width="fill_parent"	android:layout_height="wrap_content"
+            android:id="@+id/bulb2_name"
+            android:textColor="@color/text"/>
+        <CheckBox
+            android:layout_width="fill_parent"	android:layout_height="wrap_content"
+            android:text="Enable"	android:id="@+id/bulb2_en"
+            android:textColor="@color/text" />
+        <TextView
+            android:layout_width="fill_parent"	android:layout_height="wrap_content"
+            android:id="@+id/bulb3_name"
+            android:textColor="@color/text"/>
+        <CheckBox
+            android:layout_width="fill_parent"	android:layout_height="wrap_content"
+            android:text="Enable"	android:id="@+id/bulb3_en"
+            android:textColor="@color/text" />
+        
+        <LinearLayout
+            android:orientation="horizontal"	android:layout_marginTop="25dp"
+            android:layout_width="fill_parent"	android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"	android:layout_height="wrap_content"	android:layout_weight="1"
+            android:text="Auto Turn-off Bluetooth"	android:textSize="20dp"
+            android:textColor="@color/text"/>
+        <TextView
+            android:layout_width="0dp"	android:layout_height="wrap_content"	android:layout_weight="1"
+            android:text="5 minutes"	android:gravity="right"	android:textSize="20dp"	
+            android:id="@+id/bt_time_display"
+            android:textColor="@color/text"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"	android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="wrap_content"	android:layout_height="wrap_content"
+                android:id="@+id/bt_auto_off"
+                android:textColor="@color/text" />
+            <SeekBar
+                android:layout_width="0dp"	android:layout_height="wrap_content"	android:layout_weight="1"	
+                android:id="@+id/bt_time"	android:max="11"	android:maxHeight="5dp"
+                android:paddingLeft="5pt"	android:paddingRight="5pt" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="horizontal"	android:layout_marginTop="25dp"
+            android:layout_width="fill_parent"	android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"	android:layout_height="wrap_content"	android:layout_weight="1"
+                android:text="Auto Data Send Out"	android:textSize="20dp"
+                android:textColor="@color/text"/>
+            <TextView
+                android:layout_width="0dp"	android:layout_height="wrap_content"	android:layout_weight="1"
+                android:text="1 seconds"	android:gravity="right"	android:textSize="20dp"
+                android:id="@+id/bt_auto_display"
+                android:textColor="@color/text"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"	android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="wrap_content"	android:layout_height="wrap_content"
+                android:id="@+id/bt_auto_send" />
+            <SeekBar
+                android:layout_width="0dp"	android:layout_height="wrap_content"	android:layout_weight="1"	
+                android:id="@+id/bt_send_time"	android:max="11"	android:maxHeight="5dp"
+                android:paddingLeft="5pt"	android:paddingRight="5pt" />
+        </LinearLayout>
+	</LinearLayout>
+</ScrollView>
+<LinearLayout
+            android:layout_width="fill_parent"	android:layout_height="wrap_content"
+            android:orientation="horizontal"	android:paddingBottom="5pt"	android:paddingTop="5pt">
+            <Button
+                android:id="@+id/setting_ok"
+                android:layout_width="0dp"	android:layout_height="wrap_content"	android:layout_weight="1"
+                android:layout_marginLeft="30dp"	android:layout_marginRight="30dp" 	android:text="SET"
+                />
+            <Button 
+                android:id="@+id/setting_cancel"
+                android:layout_width="0dp"	android:layout_height="wrap_content"	android:layout_weight="1"
+                android:layout_marginLeft="30dp"	android:layout_marginRight="30dp"	android:text="CANCEL"/>
+        </LinearLayout>
+</LinearLayout>
